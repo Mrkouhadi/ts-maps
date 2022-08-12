@@ -1,0 +1,1 @@
+{"mappings":"AAAA,KAAK,CAAC,6BAA6B,CAAC,CAAC","sources":["src/index.ts"],"sourcesContent":["alert('Hi typescript with parcel !');\n"],"names":[],"version":3,"file":"index.377278e2.js.map","sourceRoot":"/__parcel_source_root/"}
