@@ -3,6 +3,7 @@ interface MappableInterface {
         lat: number,
         lng: number
     }
+    popupContent():string
 }
 
 export class CustomMap{
@@ -20,12 +21,19 @@ export class CustomMap{
     }
 
     addMarker(mappable: MappableInterface):void{
-        new google.maps.Marker({
-            map:this.googleMap,
-            position:{
-                lat: mappable.location.lat,
-                lng: mappable.location.lng,
-            }
+        const mapMarker = new google.maps.Marker({
+                                map:this.googleMap,
+                                position:{
+                                    lat: mappable.location.lat,
+                                    lng: mappable.location.lng,
+                                }
+                            })
+
+        mapMarker.addListener('click', ()=> {
+            const infoPopup = new google.maps.InfoWindow({
+                content:mappable.popupContent(),
+            })
+            infoPopup.open(this.googleMap, mapMarker);
         })
     }
 }
