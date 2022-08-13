@@ -1,11 +1,7 @@
 import faker from 'faker/dist/faker.js'
 
- update
 
-export class User{
-=======
 export class User {
- master
     name: string;
     location:{
         lat: number,
