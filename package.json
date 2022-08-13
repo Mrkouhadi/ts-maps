@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "(npx parcel ./index.html) & npx parcel watch ./index.html"
   },
   "keywords": [],
@@ -15,6 +14,7 @@
   },
   "dependencies": {
     "@types/faker": "^5.5.9",
+    "@types/google.maps": "^3.49.2",
     "faker": "^5.5.3"
   }
 }

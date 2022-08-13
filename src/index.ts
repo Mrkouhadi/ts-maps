@@ -1,5 +1,4 @@
-import { User } from "./User";
+import { CustomMap } from "./CustomMap";
 
-const myUser = new User();
+new CustomMap("map");
 
-console.log(myUser);
