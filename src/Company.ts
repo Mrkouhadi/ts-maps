@@ -15,4 +15,12 @@ export class Company {
             lng: +faker.address.longitude(),
         }
     } 
+    popupContent():string{
+        return `
+                    <div>
+                        <h1>${this.cName} </h1>
+                        <h3>${this.catchPhrase}</h1>
+                    </div>
+                 `;
+    }
 }
