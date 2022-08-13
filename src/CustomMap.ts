@@ -16,6 +16,4 @@ export class CustomMap{
         console.log('marker');
         
     }
-
-    
 }
