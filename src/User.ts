@@ -1,4 +1,4 @@
-import faker from "faker"; // command click on fake to read type definitions file
+import faker from 'faker/dist/faker.js'
 
 class User{
     name: string;

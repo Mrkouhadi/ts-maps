@@ -1,1 +1,3 @@
-alert('Hi typescript with parcel !');
+import { CustomMap } from "./CustomMap";
+
+new CustomMap("map");
