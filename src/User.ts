@@ -14,4 +14,12 @@ export class User{
             lng:parseFloat(faker.address.longitude()),
         }
     }
+    popupContent():string{
+        return `
+                <div>
+                    <h1>Hi there ! </h1>
+                    <h3> This is ${this.name}</h1>
+                </div>
+        `;
+    }
 }
