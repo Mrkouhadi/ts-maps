@@ -1,12 +1,14 @@
 import faker from 'faker/dist/faker.js'
+import { MappableInterface } from './CustomMap';
 
 
-export class User{
+export class User implements MappableInterface{
     name: string;
     location:{
         lat: number,
         lng: number,
     }
+    color: string = 'red';
     constructor(){
         this.name = faker.name.firstName();
         this.location={

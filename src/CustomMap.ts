@@ -1,9 +1,10 @@
-interface MappableInterface {
+export interface MappableInterface {
     location:{
         lat: number,
         lng: number
     }
     popupContent():string
+    color: string
 }
 
 export class CustomMap{
